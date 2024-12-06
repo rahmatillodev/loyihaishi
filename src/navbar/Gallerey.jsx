@@ -1,10 +1,11 @@
 import React from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 const Gallerey = () => {
   return (
     <div className="gallery">
-      Gallery
+      <Link to='/Gallery'>Gallery</Link>
       <ul className="dropdown">
         <li>Nature</li>
         <li>People</li>
