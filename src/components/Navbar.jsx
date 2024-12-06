@@ -1,9 +1,5 @@
 import React from 'react'
-import Home from './Home'
-import About from './About'
-import Gallerey from './Gallerey'
-import Services from './Services'
-import Contact from './Contact'
+
 import { IoCameraReverseOutline } from 'react-icons/io5'
 import { BsTwitterX } from 'react-icons/bs'
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
@@ -15,7 +11,7 @@ import image5 from '../img/gallery-5.jpg'
 import image6 from '../img/gallery-6.jpg'
 import image7 from '../img/gallery-7.jpg'
 import image8 from '../img/gallery-8-2.jpg'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -26,16 +22,12 @@ const Navbar = () => {
           <h1>PhotoFolio</h1>
         </div>
         <div className='div2'>
-          <BrowserRouter>
-            <Routes>
-              <Route path='/Home' element={<Home />} />
-              <Route path='/About' element={<About />} />
-              <Route path='/Gallerey' element={<Gallerey />} />
-              <Route path='/Services' element={<Services />} />
-              <Route path='/Contact' element={<Contact />} />
-              <Contact />
-            </Routes>
-          </BrowserRouter>
+          <Link to='/Home'>Home</Link>
+          <Link to="/About">About</Link>
+          <Link to='/Gallery'>Gallery</Link>
+          <Link to='/Services'>Services</Link>
+          <Link to='/Contact'>Contact</Link>
+
         </div>
         <div className='div3'>
           <BsTwitterX />
