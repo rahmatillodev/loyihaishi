@@ -6,6 +6,8 @@ import About from './components/About'
 import Gallerey from './components/Gallerey'
 import Services from './components/Services'
 import Contact from './components/Contact'
+import { BsTwitterX } from 'react-icons/bs'
+import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
 function App() {
   return (
     <>

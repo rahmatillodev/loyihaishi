@@ -1,9 +1,11 @@
 import React from 'react'
-
 import { IoCameraReverseOutline } from 'react-icons/io5'
 import { BsTwitterX } from 'react-icons/bs'
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -29,7 +31,11 @@ const Navbar = () => {
           <FaLinkedin />
         </div>
       </div>
+<<<<<<< Updated upstream
      
+=======
+
+>>>>>>> Stashed changes
 
     </>
   );
