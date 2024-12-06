@@ -6,18 +6,33 @@ import About from './components/About'
 import Gallerey from './components/Gallerey'
 import Services from './components/Services'
 import Contact from './components/Contact'
+import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { BsTwitterX } from 'react-icons/bs'
+
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <Routes>
-          <Route path='/Home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Gallerey' element={<Gallerey />} />
           <Route path='/Services' element={<Services />} />
           <Route path='/Contact' element={<Contact />} />
         </Routes>
+        <div className="pas">
+          <p>© Copyright PhotoFolio All Rights Reserved</p>
+          <div className="pas-icons">
+            <BsTwitterX />
+            <FaFacebookF />
+            <FaInstagram />
+            <FaLinkedin />
+          </div>
+          <p>
+            Designed by <span>BootstrapMade</span>
+          </p>
+        </div>
       </BrowserRouter>
     </>
   );

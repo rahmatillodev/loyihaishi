@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Cardo', serif;
-    background: rgb(9, 9, 9);
+    background: #000;
     overflow-x: hidden;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .pas {
-    background-color: #000;
+    background-color: #0d0d0d;
     color: #fff;
     text-align: center;
     padding: 20px;
