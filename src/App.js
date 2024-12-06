@@ -10,14 +10,26 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <Routes>
-          <Route path='/Home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Gallerey' element={<Gallerey />} />
           <Route path='/Services' element={<Services />} />
           <Route path='/Contact' element={<Contact />} />
         </Routes>
+        <div className="pas">
+          <p>© Copyright PhotoFolio All Rights Reserved</p>
+          <div className="pas-icons">
+            <BsTwitterX />
+            <FaFacebookF />
+            <FaInstagram />
+            <FaLinkedin />
+          </div>
+          <p>
+            Designed by <span>BootstrapMade</span>
+          </p>
+        </div>
       </BrowserRouter>
     </>
   );
