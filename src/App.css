@@ -47,7 +47,6 @@ body {
     cursor: pointer;
     font-size: 18px;
     transition: 0.5s;
-    text-decoration: none;
 }
 
 .div2 a:hover {
