@@ -2,6 +2,13 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { RiArrowRightSLine } from 'react-icons/ri';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper/modules';
+import { FaStar } from 'react-icons/fa';
 
 const About = () => {
   useEffect(() => {
@@ -10,7 +17,6 @@ const About = () => {
       once: true,
     });
   }, []);
-
   return (
     <>
       <div className='text'>
@@ -98,6 +104,88 @@ const About = () => {
         <div>
           <h1>What they are saying</h1>
         </div>
+      </div>
+      <div className="karusel">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide className='SwiperSlide'>
+            <div className="star">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="Opa" />
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum.</p>
+          </SwiperSlide>
+          <SwiperSlide className='SwiperSlide'>
+            <div className="star">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="Opa" />
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum.</p>
+          </SwiperSlide>
+          <SwiperSlide className='SwiperSlide'>
+            <div className="star">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="Opa" />
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum.</p>
+          </SwiperSlide>
+          <SwiperSlide className='SwiperSlide'>
+            <div className="star">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="Opa" />
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum.</p>
+          </SwiperSlide>
+          <SwiperSlide className='SwiperSlide'>
+            <div className="star">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="Opa" />
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum.</p>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </>
   );
