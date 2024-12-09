@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Cardo', serif;
-    background: rgb(9, 9, 9);
+    background: black;
     overflow-x: hidden;
 }
 
@@ -127,7 +127,7 @@ body {
 
 .text {
     width: 100%;
-    height: 50vh;
+    height: 75vh;
     display: flex;
     text-align: center;
     align-items: center;
@@ -207,7 +207,6 @@ body {
 }
 
 .pas {
-    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -248,4 +247,131 @@ body {
 .pas span {
     color: #10b981;
     cursor: pointer;
+}
+
+.text .About {
+    font-size: 64px;
+}
+
+.chiziq {
+    width: 100%;
+    height: 70px;
+    background: #191919;
+    margin: 20px 0px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    color: white;
+}
+
+.chiziq h4:nth-child(1) {
+    color: #10b981;
+}
+
+.about-container {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.about-info-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image-column {
+    width: 50%;
+    margin-right: 20px;
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-end;
+}
+
+.about-image {
+    width: 370px;
+    height: 530px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text-column {
+    display: flex;
+    margin-right: 150px;
+    flex-direction: column;
+    width: 550px;
+    height: 650px;
+}
+
+.about-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    color: #ccc;
+}
+
+.about-info-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-info-list li {
+    margin-bottom: 10px;
+}
+
+.about-info-list strong {
+    color: white;
+}
+
+.about-info-list svg {
+    color: #27A757;
+}
+
+.about-info-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-info-list a:hover {
+    text-decoration: underline;
+}
+
+.about-text {
+    color: #fff;
+}
+
+.Testimonials {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: self-start;
+    padding: 0px 150px;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Befor {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.befoore{
+    width: 150px;
+    height: 1px;
+    background: #27A757;
 }
